@@ -22,13 +22,12 @@ instaladaciones necesarias:
 - **npm** o **pnpm** o **yarn**
 - **Git**
 
-Verifica Node:
-```bash
+##Instalaciones: 
+
 
 
 Clona este repositorio:
-```git clone
 
+```Clona este repositorio con el siguiente comando:
+   git clone https://github.com/GSMerino/EjercicioApp.git
 
-node -v
-npm -v
