@@ -1,7 +1,8 @@
-import { createHashRouter } from 'react-router';
+import { createBrowserRouter } from 'react-router';
 import { HomePage } from '../Post/pages/Home/HomePage';
+import { PostPage } from '../Post/pages/Post/PostPage';
 
-export const RouterApp = createHashRouter([
+export const RouterApp = createBrowserRouter([
     {
         path: '/',
         element: <HomePage />,
@@ -9,6 +10,6 @@ export const RouterApp = createHashRouter([
     },
     {
         path: 'post/:id',
-        element: ''
+        element: <PostPage />
     }
 ]);

@@ -14,21 +14,21 @@ export const PostCard = ({id, title }: PostCardProps) => {
     const navigate = useNavigate(); 
 
     const hanldeDetailPost = () => {
-        navigate(`/country/${id}`);
+        navigate(`/post/${id}`);
 
     }
 
     return(
-        <article className="flex flex-col gap-3 rounded-lg border border-black">
+        <article className="w-full max-w-3xl bg-white rounded-xl shadow-md p-8 space-y-6">
             <div
                 className="flex items-center justify-center"
             >
-                <span>{title}</span>
+                <span className="text-2xl md:text-xl font-bold text-gray-800">{title}</span>
 
             </div>
             <div className="flex items-center justify-center">
                 <button
-                    className="p-2 cursor-pointer rounded-md bg-blue-500 "
+                    className="p-2 cursor-pointer rounded-md bg-blue-500  text-white"
                     onClick={hanldeDetailPost}
                 >
                     Ver más
