@@ -4,11 +4,15 @@ import { NotepadText, House  } from 'lucide-react';
 
 export const PostPage = () => {
   const { id } = useParams()
-  const { data = [] } = usePost()
+  const { data = [], isLoading } = usePost()
 
   const post = data.find(p => p.id === Number(id))
 
-  if (!post) return <p className="text-center mt-10">Post no encontrado</p>
+    if (!post) return <p className="text-center mt-10">Post no encontrado</p>
+
+    if(isLoading) {
+        return <p>Cargando Post</p>
+    }
 
   return (
     <section className="min-h-screen flex items-center justify-center bg-gray-50 px-4">
