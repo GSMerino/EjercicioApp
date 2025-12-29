@@ -26,6 +26,9 @@ Verifica Node:
 ```bash
 
 
+Clona este repositorio:
+```git clone
+
 
 node -v
 npm -v
